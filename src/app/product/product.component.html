@@ -1,0 +1,34 @@
+<h3 *ngIf="products; else noProduct">{{title}}</h3>
+<!--*ngIf products datası tanımlanmış mı var mı yok mu kontrol ederek ona göre ekranda gözükür!-->
+<!-- products eğer yoksa noProduct gösterilsin-->
+<div class="form-group">
+    <input
+        type="search"
+        class="form-control"
+        id="exampleInputSearch1"
+        placeholder="Bir Arama Yap"
+        [(ngModel)]="filterText" 
+    />  <!-- banana notation ile two way binding yapıyoruz-->
+    <small *ngIf="filterText" class="form-text text-muted">
+        Şu anda <bold>{{filterText}}</bold> kelimesini aradınız!
+    </small>
+</div>
+
+<ng-template #noProduct>
+    <div class="alert alert-warning" role="alert">
+        Bu Kategoride Ürünümüz Yoktur!
+    </div>
+
+</ng-template>
+<div class="row">
+    <div *ngFor="let product of products | productFilter:filterText" class="card" style="width: 18rem;">
+     <!-- *ngFor istenilen veriyi vermek için döngüyle ekrana getirir-->
+        <img [src]="product.imageUrl" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{product.name}}<br>₺{{product.price | currency:' '}}</h5>
+            <p class="card-text">{{product.description}}</p>
+            <a href="#" class="btn btn-primary">Sepete Ekle</a>
+        </div>
+
+    </div>
+</div>
