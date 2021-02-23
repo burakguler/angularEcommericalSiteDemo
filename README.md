@@ -1,6 +1,14 @@
-# Shop
+# angularEcommericalSiteDemo
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
+
+## Dev dependencies
+
+This project is using bootstrap 4.6.0, Jquery 1.9.1, popper.js 1.16.1, Typescript 4.1.2.
+
+## Project dependencies
+
+Using Alertifyjs 1.13.1, font-awesome 4.7.0
 
 ## Development server
 
