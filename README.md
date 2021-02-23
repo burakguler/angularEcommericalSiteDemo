@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Dev dependencies
 
-This project is using bootstrap 4.6.0, Jquery 1.9.1, popper.js 1.16.1, Typescript 4.1.2., [json-server](https://github.com/typicode/json-server)
+This project is using bootstrap 4.6.0, Jquery 1.9.1, popper.js 1.16.1, Typescript 4.1.2., [Json-server](https://github.com/typicode/json-server)
 
 ## Project dependencies
 
