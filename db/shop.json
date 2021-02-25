@@ -1,0 +1,62 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "HP PROBOOK",
+      "price": 4999,
+      "categoryId": 1,
+      "description": "Ultrabook",
+      "imageUrl": "https://productimages.hepsiburada.net/s/26/200/10159057862706.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Monster Notebook Abra A5",
+      "price": 5599,
+      "categoryId": 2,
+      "description": "Gaming Laptop",
+      "imageUrl": "https://productimages.hepsiburada.net/s/53/200/11143767949362.jpg"
+    },
+    {
+      "categoryId": "1",
+      "name": "HP PROBOOK G7",
+      "price": "5999",
+      "description": "Ultrabook",
+      "imageUrl": "https://mcdn01.gittigidiyor.net/64655/tn50/646550469_tn50_0.jpg",
+      "id": 3
+    },
+    {
+      "name": "HP PROBOOK G9",
+      "price": "6999",
+      "description": "Ultrabook",
+      "imageUrl": "https://mcdn01.gittigidiyor.net/64655/tn50/646550469_tn50_0.jpg",
+      "categoryId": "1",
+      "id": 4
+    },
+    {
+      "name": "HP PROBOOK G9 V2",
+      "price": "7499",
+      "description": "Ultrabook",
+      "imageUrl": "https://mcdn01.gittigidiyor.net/64655/tn50/646550469_tn50_0.jpg",
+      "categoryId": "1",
+      "id": 5
+    },
+    {
+      "name": "Monster Notebook Abra A7",
+      "price": "8999",
+      "description": "Gaming Laptop",
+      "imageUrl": "https://productimages.hepsiburada.net/s/39/200/10617275875378.jpg",
+      "categoryId": "2",
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "İş Bilgisayarları"
+    },
+    {
+      "id": 2,
+      "name": "Oyun Bilgisayarları"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+.productCards{
+    width: 18rem; 
+    margin: 14px; 
+    border-radius: 10px; 
+    border-color:#007bff 
+    
+}
+
+.img{
+    padding: 5px;
+    width: 275px;
+    height: 275px;
+    object-fit: cover;
+}
+
+.btnSepet{
+    float: right;
+}
+.card-title{
+    color:#007bff;
+}

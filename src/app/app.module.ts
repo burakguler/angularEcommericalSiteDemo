@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 //httpclientmodule kulllanmak için import etmemiz gerek
@@ -10,6 +10,9 @@ import { NavComponent } from './nav/nav.component';
 import { CategoryComponent } from './category/category.component';
 import { ProductFilterPipe } from './product/product-filter.pipe';
 import { AlertifyService } from './services/alertify.service';
+import { ProductAddForms1Component } from './product/product-add-forms1/product-add-forms1.component';
+import { ProductAddForms2Component } from './product/product-add-forms2/product-add-forms2.component';
+
 
 
 @NgModule({
@@ -18,13 +21,17 @@ import { AlertifyService } from './services/alertify.service';
     ProductComponent,
     NavComponent,
     CategoryComponent,
-    ProductFilterPipe
+    ProductFilterPipe,
+    ProductAddForms1Component,
+    ProductAddForms2Component,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule //import kısmına da tanımlıyoruz
+    HttpClientModule, //import kısmına da tanımlıyoruz
+    ReactiveFormsModule,
   ],
   providers: [AlertifyService],
   bootstrap: [AppComponent]
