@@ -1,7 +1,7 @@
 .productCards{
     width: 18rem; 
-    margin: 14px; 
-    border-radius: 10px; 
+   
+    border-radius: 15px; 
     border-color:#007bff 
     
 }
@@ -19,3 +19,30 @@
 .card-title{
     color:#007bff;
 }
+
+.box {
+    transition: box-shadow .3s;
+    width: 300px;
+    height: 500px;
+    margin: auto; /* Added */
+    margin-bottom: 10px;
+    float: none;
+    border-radius:10px;
+    border: 1px solid;
+    background: #fff;
+    border-color:lightgrey;
+}
+  .box:hover {
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    border-color:  #007bff;
+}
+
+.btnShadow{
+    transition: box-shadow .3s
+}
+
+ .btnShadow:hover{
+    box-shadow: 0 0 11px rgba(33,33,33,.2); 
+    
+ }
+

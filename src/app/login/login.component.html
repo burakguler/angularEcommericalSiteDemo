@@ -1,0 +1,35 @@
+<style>
+    #inputEmail:focus {
+        background-color: #f5f5f5;
+        
+    }
+
+    #inputPassword:focus {
+        background-color: #f5f5f5;
+        
+    }
+
+</style>
+<div id="cardArea" class="card cardBorder box text-center mb-4" >
+    <form class="form-signin" #loginForm="ngForm" (ngSubmit)="login(loginForm)" >
+        <div class="text-center mb-4">
+            <img class="mb-4"
+                src="https://media.istockphoto.com/vectors/market-shop-store-house-icon-vector-id1204274501?b=1&k=6&m=1204274501&s=612x612&w=0&h=TEUxSDKto0rwFphi-B6xmef0MKsjX4bzXZ32vU9UOYA="
+                alt="" width="150" height="150">
+            <h1 class="h3 mb-3 font-weight-normal">Giriş Yapınız</h1>
+        </div>
+
+        <div class="form-label-group">
+            <input type="email" #userName="ngModel" [(ngModel)]="model.userName" name="userName" id="inputEmail" class="form-control form-txt1" placeholder="E-Posta" required autofocus>
+            <label for="inputEmail">E-Posta</label>
+        </div>
+
+        <div class="form-label-group">
+            <input type="password" #password="ngModel" [(ngModel)]="model.password" name="password" id="inputPassword" class="form-control form-txt1" placeholder="Şifre" required>
+            <label for="inputPassword">Şifre</label>
+        </div>
+
+        <button class="btn btn-lg btn-outline-primary btn-block form-sbmt1" type="submit" id=suButton>Giriş Yap</button>
+        <p class="mt-5 mb-3 text-muted text-center">Burak Güler &copy; 2021</p>
+    </form>
+</div>

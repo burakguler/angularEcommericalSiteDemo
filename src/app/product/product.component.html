@@ -16,22 +16,24 @@
     </div>
 
 </ng-template>
-<div class="row">
-    <div *ngFor="let product of products | productFilter:filterText" class="card productCards">
+<div class="row ">
+    <div *ngFor="let product of products | productFilter: filterText" class="card productCards box d-flex flex-column">
         <!-- style="width: 18rem; padding: 5px; margin: 15px; border-radius: 10px; border-color:#007bff" -->
         <!-- *ngFor istenilen veriyi vermek için döngüyle ekrana getirir-->
-        <img [src]="product.imageUrl" class="card-img-top img" alt="...">
-        <div class="card-body ">
-            <h5>{{product.name}}<br></h5>
-            <h5 class="card-title">₺{{product.price | currency:' '}}</h5>
-            <p class="card-text">{{product.description}}</p>
-            <div ><a (click)="addToCart(product)" class="btn btn-primary btn-rounded btnSepet mt-auto"> <svg
-                        xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-                        class="bi bi-basket3-fill" viewBox="0 0 16 16">
+        <img [src]="product.imageUrl" class="card-img-top img h-50 w-100" alt="..." />
+        <div class="card-body d-flex flex-column w-100 h-100 ">
+            <h5 class="h-25">{{ product.name }}</h5>
+            <h5 class="card-title h-25">₺{{ product.price | currency: " " }}</h5>
+            <p class="card-text h-25">{{ product.description }}</p>
+            <div>
+                <a (click)="addToCart(product)" class="btn btn-primary btn-rounded btnSepet btnShadow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                        class="bi bi-basket3-fill h-25" viewBox="0 0 16 16">
                         <path
                             d="M5.757 1.071a.5.5 0 0 1 .172.686L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5H.5a.5.5 0 0 1-.5-.5v-1A.5.5 0 0 1 .5 6h1.717L5.07 1.243a.5.5 0 0 1 .686-.172zM2.468 15.426L.943 9h14.114l-1.525 6.426a.75.75 0 0 1-.729.574H3.197a.75.75 0 0 1-.73-.574z" />
-                    </svg> Sepete Ekle</a></div>
+                    </svg>
+                    Sepete Ekle</a>
+            </div>
         </div>
-
     </div>
 </div>
